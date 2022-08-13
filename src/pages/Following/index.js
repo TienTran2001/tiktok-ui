@@ -1,5 +1,5 @@
 function Following() {
-  return <h2>Following</h2>;
+  return <h1>Following</h1>;
 }
 
 export default Following;

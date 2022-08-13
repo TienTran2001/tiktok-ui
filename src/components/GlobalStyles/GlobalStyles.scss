@@ -1,18 +1,45 @@
 @import 'reset';
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 
-html {
-  font-size: 62.5%;
+// variable
+:root {
+    --primary-color: #fe2c55;
+    --white-color: #fff;
+    --black-color: #000;
+    --width-content: 1150px;
+    --gray-light: rgba(254, 44, 85, 0.06);
 }
 
-// constants
-$primary: #fe2c55;
+//
+button,
+a,
+input {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
 
 // base
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
+.text-truncate-1line {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
