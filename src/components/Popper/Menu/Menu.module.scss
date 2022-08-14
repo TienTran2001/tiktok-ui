@@ -1,0 +1,22 @@
+.menu-list {
+    min-width: 224px;
+    // padding: 9px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+
+    .popper-more {
+        margin-top: 0;
+        transform: translate(20px, -6px);
+        padding-bottom: 8px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        border-width: 9px 10px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        top: -23px;
+        right: 5px;
+    }
+}

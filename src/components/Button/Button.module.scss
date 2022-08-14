@@ -70,3 +70,12 @@
     margin-right: 8px;
     transform: translateY(1px);
 }
+
+.menu-btn-item {
+    padding: 9px 16px;
+    width: 100%;
+    justify-content: start;
+    &:hover {
+        background-color: var(--gray-light);
+    }
+}
